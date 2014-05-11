@@ -1,8 +1,8 @@
-class CalculationController < ApplicationController
+class CalculationsController < ApplicationController
   def home
   end
 
-  def square_root
+  def sqrt
     @the_number = params[:number].to_f
     @answer = Math.sqrt(@the_number)
   end
@@ -10,3 +10,4 @@ class CalculationController < ApplicationController
   def pmt
   end
 end
+
